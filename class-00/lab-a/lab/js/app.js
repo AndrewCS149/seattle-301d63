@@ -5,6 +5,7 @@ const names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', '
 const leftImage = document.getElementById('left');
 const centerImage = document.getElementById('center');
 const rightImage = document.getElementById('right');
+
 let allProducts = [];
 const container = document.getElementById('image_container');
 const viewed = [];
@@ -17,7 +18,7 @@ const votes = [];
 
 function Product(name) {
   this.name = name;
-  this.path = `img/ ${name}.jpg`;
+  this.path = `img/${name}.jpg`;
   this.votes = 0;
   this.views = 0;
   allProducts.push(this);
@@ -34,9 +35,10 @@ function displayPics(){
       viewed.push(rando);
     }
   }
-
+  // console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
-  // Rando was originally defined with a 'var' keyword which allows it to be accessed anywhere within the function is was declared in. When I switched it to 'let' this restricts its scope to the 'code block' that it is declared in.
+  // This was originally declared with the var keyword, which causes it to be 'function' scoped. When it was changed from 'var' to 'let' this changed its scope to 'block' scoped.
+
 
   // PUT YOUR RESPONSE IN THIS COMMENT
   console.log(viewed);
@@ -75,7 +77,6 @@ function showList() {
   for(let i = 0; i < allProducts.length; i++) {
     const liEl = document.createElement('li');
     liEl.textContent = `${allProducts[i].name} has ${allProducts[i].votes} votes in ${allProducts[i].views} views`;
-
     list.appendChild(liEl);
   }
 }
