@@ -226,8 +226,8 @@ console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+// The student object
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+// The window object
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// 'this' (when used with an arrow function) is bypassing the direct containing object and referring to the next containing object which happens to be the 'window' object. 'this' (when used with other functions) refers to the object it is inside.
