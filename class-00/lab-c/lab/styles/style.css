@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Abel|Oswald:700|Yellowtail|Patrick+Hand');
 
-* {
+/* * {
   font-family: times;
-}
+} */
 
-body {
+/* body {
   background: #fff;
-}
+} */
 
-nav, article, aside, footer section {
+/* nav,
+article,
+aside,
+footer section {
   margin: 0 auto;
   width: 900px;
 }
 
 nav {
   margin-top: 25px;
-}
+} */
 
-#logo {
+/* #logo {
   float: left;
   padding-bottom: 25px;
   color: black;
@@ -26,9 +29,9 @@ nav {
 
 #logo img {
   float: left;
-}
+} */
 
-#logo h1 {
+/* #logo h1 {
   padding-left: 50px;
   font-family: 'Yellowtail', cursive;
   font-size: 2.4em;
@@ -41,16 +44,16 @@ nav {
   font-family: 'Abel', sans-serif;
   font-size: .65em;
   text-transform: uppercase;
-}
+} */
 
-nav ul {
+/* nav ul {
   float: right;
 }
 
 nav li {
   float: left;
   padding-right: 2px;
-}
+} */
 
 hr {
   clear: both;
@@ -65,7 +68,8 @@ h2 {
   font-size: 2.5em;
 }
 
-.print, .date {
+.print,
+.date {
   color: #a9a8a5;
   font-family: 'Abel', sans-serif;
   font-size: .8em;
@@ -159,7 +163,7 @@ section hr {
 }
 
 
-footer section p{
+footer section p {
   padding: 50px 0;
   line-height: 1.5em;
   text-align: center;
